@@ -1,6 +1,6 @@
 export default function PersonalInfo() {
 	return (
-		<div className="bg-blue-400 ">
+		<div className="bg-blue-400 p-2">
 			<h1 className="text-2xl text-center">Soham Powar</h1>
 			<div>
 				<p>email@gmail.com</p>
