@@ -2,7 +2,7 @@ import PersonalInfo from "./components/PersonalInfo";
 import Profile from "./components/Profile";
 import ExperienceSection from "./components/ExperienceSection";
 
-import PersonalInfoForm from "./components/PersonalInfoFrom";
+import PersonalInfoForm from "./components/PersonalInfoForm";
 
 export default function App() {
 	return (
