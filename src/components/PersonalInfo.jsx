@@ -1,11 +1,11 @@
-export default function PersonalInfo() {
+export default function PersonalInfo({ personalInfo }) {
 	return (
 		<div className="bg-blue-400 p-2">
-			<h1 className="text-2xl text-center">Soham Powar</h1>
+			<p className="text-2xl text-center">{personalInfo.fullName}</p>
 			<div>
-				<p>email@gmail.com</p>
-				<p>88446841333</p>
-				<p>London, Uk</p>
+				<p>{personalInfo.email}</p>
+				<p>{personalInfo.phoneNumber}</p>
+				<p>{personalInfo.address}</p>
 			</div>
 		</div>
 	);
