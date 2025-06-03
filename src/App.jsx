@@ -22,6 +22,13 @@ export default function App() {
 		aboutMe: "I am a motivated and detail-oriented professional with a strong passion for learning and problem-solving. With a proven ability to adapt quickly, collaborate effectively, and deliver high-quality work, I thrive in fast-paced environments that challenge me to grow. I’m driven by curiosity and a desire to make meaningful contributions, whether working independently or as part of a team.",
 	});
 
+	// const [experiences, setExperiences] = useState(
+	// 	[
+	// 		{},
+	// 		{},
+	// 	]
+	// )
+
 	return (
 		<div className="flex justify-between">
 			<div className="flex-1/2 bg-pink-200 p-2 flex flex-col gap-1 min-h-screen">
