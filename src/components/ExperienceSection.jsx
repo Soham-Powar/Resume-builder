@@ -6,7 +6,6 @@ export default function ExperienceSection() {
 			<h2 className="text-center">Professional Experience</h2>
 			<div className="experiences flex flex-col gap-1">
 				<Experience />
-				<Experience />
 			</div>
 
 		</div>

@@ -1,4 +1,4 @@
-export default function FormInput({ name, isRequired, type, setPersonalInfo, personalInfo }) {
+export default function FormInput({ name, isRequired, type, setInfo, info }) {
 
 	// MAKE IT INTO CAMELCASE
 	let idfy = name
@@ -17,10 +17,10 @@ export default function FormInput({ name, isRequired, type, setPersonalInfo, per
 				id={idfy}
 				name={idfy}
 				required={isRequired}
-				value={personalInfo[idfy] || ""}
+				value={info[idfy] || ""}
 				onChange={(e) =>
-					setPersonalInfo({
-						...personalInfo,
+					setInfo({
+						...info,
 						[idfy]: e.target.value,
 					})
 				}

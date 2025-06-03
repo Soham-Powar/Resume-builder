@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+* {
+	font-family: "Noto Sans", sans-serif;
+}
+
 input {
 	background-color: #F3F4F6;
 	border-radius: 10px;
