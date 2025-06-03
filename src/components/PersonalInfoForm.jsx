@@ -6,6 +6,7 @@ export default function PersonalInfoForm({ setPersonalInfo, personalInfo }) {
 			<h2>Personal Info: </h2>
 			<FormInput name="Full name" isRequired={true} type="text" setPersonalInfo={setPersonalInfo} personalInfo={personalInfo} />
 			<FormInput name="Email" isRequired={true} type="email" setPersonalInfo={setPersonalInfo} personalInfo={personalInfo} />
+			<FormInput name="Address" isRequired={true} type="text" setPersonalInfo={setPersonalInfo} personalInfo={personalInfo} />
 		</div>
 	);
 }
