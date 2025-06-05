@@ -1,4 +1,17 @@
+
+
 export default function FormInput({ name, isRequired, type, setInfo, info }) {
+
+	function handleInputChange(e) {
+		if (Array.isArray(info)) {
+			console.log("hel");
+		} else {
+			setInfo({
+				...info,
+				[idfy]: e.target.value,
+			})
+		}
+	}
 
 	// MAKE IT INTO CAMELCASE
 	let idfy = name
@@ -19,10 +32,7 @@ export default function FormInput({ name, isRequired, type, setInfo, info }) {
 				required={isRequired}
 				value={info[idfy] || ""}
 				onChange={(e) =>
-					setInfo({
-						...info,
-						[idfy]: e.target.value,
-					})
+					handleInputChange(e)
 				}
 				className="rounded-full border px-2 py-1"
 			/>

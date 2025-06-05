@@ -1,10 +1,10 @@
 import FormInput from "./FormInput";
 
-export default function ExperienceForm({ setProfile, profile }) {
+export default function ExperienceForm({ setExperiences, experiences }) {
 	return (
 		<div className="bg-blue-200 mx-40 p-2.5">
-			<h2>Profile: </h2>
-			<FormInput name="About me" isRequired={true} type="text" setInfo={setProfile} info={profile} />
+			<h2>Experience: </h2>
+			<FormInput name="Company Name" isRequired={true} type="text" setInfo={setExperiences} info={experiences} />
 		</div>
 	);
 }

@@ -60,7 +60,7 @@ export default function App() {
 			<div className="flex-1/2 bg-pink-200 p-2 flex flex-col gap-1 min-h-screen">
 				<PersonalInfoForm setPersonalInfo={setPersonalInfo} personalInfo={personalInfo} />
 				<ProfileForm setProfile={setProfile} profile={profile} />
-				<ExperienceForm setProfile={setExperiences} profile={profile} />
+				<ExperienceForm setExperiences={setExperiences} experiences={experiences} />
 			</div>
 
 
