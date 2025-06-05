@@ -1,6 +1,6 @@
 
 
-export default function FormInput({ name, isRequired, type, setInfo, info, expID }) {
+export default function FormTextArea({ name, isRequired, setInfo, info, expID }) {
 
 	function handleInputChange(e) {
 		console.log(expID)
@@ -35,8 +35,7 @@ export default function FormInput({ name, isRequired, type, setInfo, info, expID
 	return (
 		<div className="flex flex-col gap-1 mb-2">
 			<label htmlFor={idfy} className="font-semibold">{name}</label>
-			<input
-				type={type}
+			<textarea
 				id={idfy}
 				name={idfy}
 				required={isRequired}
@@ -48,8 +47,9 @@ export default function FormInput({ name, isRequired, type, setInfo, info, expID
 				onChange={(e) =>
 					handleInputChange(e)
 				}
-				className="rounded-full border px-2 py-1"
-			/>
-		</div>
+				className="rounded-2xl rows-4 border px-2 py-1">
+
+			</textarea>
+		</div >
 	);
 }

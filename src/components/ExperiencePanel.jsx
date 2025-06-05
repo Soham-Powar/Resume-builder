@@ -7,7 +7,7 @@ export default function ExperiencePanel({ setExperiences, experiences }) {
 
 	return (
 		<div className="bg-white rounded-xl pb-2">
-			<h2 className="text-[24px] font-semibold p-3">Experiences</h2>
+			<h2 className="text-[24px] font-bold p-3">Experiences</h2>
 
 			{formShown >= 0 ? (
 				<ExperienceForm experiences={experiences} setExperiences={setExperiences} expID={formShown} />

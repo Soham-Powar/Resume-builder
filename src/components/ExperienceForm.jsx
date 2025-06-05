@@ -1,4 +1,5 @@
 import FormInput from "./FormInput";
+import FormTextArea from "./FormTextArea";
 
 export default function ExperienceForm({ setExperiences, experiences, expID }) {
 	return (
@@ -10,7 +11,7 @@ export default function ExperienceForm({ setExperiences, experiences, expID }) {
 				<FormInput name="End Date" isRequired={true} type="text" setInfo={setExperiences} info={experiences} expID={expID} />
 			</div>
 			<FormInput name="Location" isRequired={false} type="text" setInfo={setExperiences} info={experiences} expID={expID} />
-			<FormInput name="Description" isRequired={false} type="text" setInfo={setExperiences} info={experiences} expID={expID} />
+			<FormTextArea name="Description" isRequired={false} setInfo={setExperiences} info={experiences} expID={expID} />
 		</div>
 	);
 }
