@@ -58,7 +58,7 @@ export default function App() {
 	return (
 		<div className="flex justify-center bg-[#F3F4F6] p-5 gap-10">
 
-			<div className="grow-1 p-2 flex flex-col gap-1 bg-amber-200 max-w-[450px]">
+			<div className="grow-1 p-2 flex flex-col gap-4 max-w-[450px]">
 				<PersonalInfoForm setPersonalInfo={setPersonalInfo} personalInfo={personalInfo} />
 				<ProfileForm setProfile={setProfile} profile={profile} />
 				<ExperiencePanel setExperiences={setExperiences} experiences={experiences} />

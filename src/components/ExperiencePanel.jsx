@@ -6,8 +6,8 @@ export default function ExperiencePanel({ setExperiences, experiences }) {
 	const [formShown, setFormShown] = useState(-1);
 
 	return (
-		<div className="bg-blue-400 p-3">
-			<h2>Experiences: </h2>
+		<div className="bg-white rounded-xl pb-2">
+			<h2 className="text-[24px] font-semibold p-3">Experiences</h2>
 
 			{formShown >= 0 ? (
 				<ExperienceForm experiences={experiences} setExperiences={setExperiences} expID={formShown} />
@@ -15,7 +15,7 @@ export default function ExperiencePanel({ setExperiences, experiences }) {
 				<ul className=" flex flex-col gap-1.5">
 					{experiences.map(experience => {
 						return (
-							<div key={experience.companyName} className="bg-amber-400 flex justify-between p-1.5">
+							<div key={experience.companyName} className="flex justify-between p-2 border-t-7 border-[#F3F4F6] items-center">
 								<li>{experience.companyName}</li>
 								<div className="flex gap-1.5">
 									<button onClick={() => setFormShown(experience.index)}>Edit</button>
