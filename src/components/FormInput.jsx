@@ -1,17 +1,18 @@
 
 
-export default function FormInput({ name, isRequired, type, setInfo, info }) {
+export default function FormInput({ name, isRequired, type, setInfo, info, expID }) {
 
 	function handleInputChange(e) {
+		console.log(expID)
 		if (Array.isArray(info)) {
 
 			const copyExperience = {
-				...info[0],
+				...info[expID],
 				[idfy]: e.target.value,
 			};
 
 			const shallowCopy = info.slice();
-			shallowCopy[0] = copyExperience;
+			shallowCopy[expID] = copyExperience;
 			setInfo(shallowCopy);
 
 		} else {
@@ -41,7 +42,7 @@ export default function FormInput({ name, isRequired, type, setInfo, info }) {
 				required={isRequired}
 				value={
 					Array.isArray(info)
-						? info[0]?.[idfy] || ""
+						? info[expID]?.[idfy] || ""
 						: info[idfy] || ""
 				}
 				onChange={(e) =>

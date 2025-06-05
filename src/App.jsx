@@ -6,7 +6,7 @@ import ExperienceSection from "./components/ExperienceSection";
 
 import PersonalInfoForm from "./components/PersonalInfoForm";
 import ProfileForm from "./components/ProfileForm";
-import ExperienceForm from "./components/ExperienceForm";
+import ExperiencePanel from "./components/ExperiencePanel";
 
 
 export default function App() {
@@ -26,8 +26,8 @@ export default function App() {
 	const [experiences, setExperiences] = useState(
 		[
 			{
-				index: 1,
-				companyName: "Talonfalme Ltd.",
+				index: 0,
+				companyName: "Talonflame Ltd.",
 				position: "Web Developer",
 				startDate: "08/2020",
 				endDate: "12/2022",
@@ -35,7 +35,7 @@ export default function App() {
 				description: "Supported senior researchers on accessibility standards for the open web. Created and usability tested wireframes and prototypes. Produced interactive documentation for quick onboarding of new researchers."
 			},
 			{
-				index: 2,
+				index: 1,
 				companyName: "NebulaSoft Solutions",
 				position: "Frontend Developer",
 				startDate: "01/2019",
@@ -44,7 +44,7 @@ export default function App() {
 				description: "Developed responsive web interfaces using React and Tailwind CSS. Collaborated with UX designers to implement pixel-perfect UI components. Optimized page performance and accessibility across major browsers."
 			},
 			{
-				index: 3,
+				index: 2,
 				companyName: "PixelCrate Technologies",
 				position: "UI/UX Designer & Developer",
 				startDate: "03/2017",
@@ -60,7 +60,7 @@ export default function App() {
 			<div className="flex-1/2 bg-pink-200 p-2 flex flex-col gap-1 min-h-screen">
 				<PersonalInfoForm setPersonalInfo={setPersonalInfo} personalInfo={personalInfo} />
 				<ProfileForm setProfile={setProfile} profile={profile} />
-				<ExperienceForm setExperiences={setExperiences} experiences={experiences} />
+				<ExperiencePanel setExperiences={setExperiences} experiences={experiences} />
 			</div>
 
 
