@@ -1,6 +1,6 @@
 export default function PersonalInfo({ personalInfo }) {
 	return (
-		<div className="bg-blue-400 p-2">
+		<div className="bg-[#0E374E] text-white p-2 h-[150px]">
 			<p className="text-2xl text-center">{personalInfo.fullName}</p>
 			<div>
 				<p>{personalInfo.email}</p>

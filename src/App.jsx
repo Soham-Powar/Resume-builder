@@ -56,21 +56,26 @@ export default function App() {
 	)
 
 	return (
-		<div className="flex justify-between">
-			<div className="flex-1/2 bg-pink-200 p-2 flex flex-col gap-1 min-h-screen">
+		<div className="flex justify-center bg-[#F3F4F6] p-5 gap-10">
+
+			<div className="grow-1 p-2 flex flex-col gap-1 bg-amber-200 max-w-[450px]">
 				<PersonalInfoForm setPersonalInfo={setPersonalInfo} personalInfo={personalInfo} />
 				<ProfileForm setProfile={setProfile} profile={profile} />
 				<ExperiencePanel setExperiences={setExperiences} experiences={experiences} />
 			</div>
 
 
-			<div className="flex-1/2 border-2 border-b-blue-950 min-h-screen bg-purple-600 p-2 flex flex-col gap-1">
+			<div className="h-[29.7cm] w-[21cm] flex flex-col gap-1 [box-shadow:0_13px_27px_-5px_rgba(50,50,93,0.1),0_8px_16px_-8px_rgba(0,0,0,0.25)]">
 				<PersonalInfo personalInfo={personalInfo} />
 				<Profile profile={profile} />
 				<ExperienceSection experiences={experiences} />
 				{/* <Education />
 				<Skills /> */}
 			</div>
+
+
 		</div>
+
+
 	);
 }

@@ -6,7 +6,7 @@ export default function ExperiencePanel({ setExperiences, experiences }) {
 	const [formShown, setFormShown] = useState(-1);
 
 	return (
-		<div className="bg-blue-200 mx-40 p-2.5">
+		<div className="bg-blue-400 p-3">
 			<h2>Experiences: </h2>
 
 			{formShown >= 0 ? (
