@@ -1,4 +1,3 @@
-import FormInput from "./FormInput";
 import FormTextArea from "./FormTextArea";
 
 export default function ProfileForm({ setProfile, profile }) {
