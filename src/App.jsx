@@ -14,9 +14,9 @@ export default function App() {
 	// STATES 
 	const [personalInfo, setPersonalInfo] = useState({
 		fullName: "Soham Powar",
-		email: "sohampowar13@gmail.com",
-		phoneNumber: 8446841344,
-		address: "Queens Road, London",
+		email: "thisissohamsmail@gmail.com",
+		phoneNumber: 8446841369,
+		address: "Queens Road, Mumbai",
 	});
 
 	const [profile, setProfile] = useState({
