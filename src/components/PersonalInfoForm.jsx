@@ -8,6 +8,7 @@ export default function PersonalInfoForm({ setPersonalInfo, personalInfo }) {
 			<div className="js-details p-3">
 				<FormInput name="Full name" isRequired={true} type="text" setInfo={setPersonalInfo} info={personalInfo} />
 				<FormInput name="Email" isRequired={true} type="email" setInfo={setPersonalInfo} info={personalInfo} />
+				<FormInput name="Phone Number" isRequired={true} type="number" setInfo={setPersonalInfo} info={personalInfo} />
 				<FormInput name="Address" isRequired={true} type="text" setInfo={setPersonalInfo} info={personalInfo} />
 			</div>
 		</div>
