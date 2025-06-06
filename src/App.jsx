@@ -20,7 +20,7 @@ export default function App() {
 	});
 
 	const [profile, setProfile] = useState({
-		aboutMe: "I am a motivated and detail-oriented professional with a strong passion for learning and problem-solving. With a proven ability to adapt quickly, collaborate effectively, and deliver high-quality work, I thrive in fast-paced environments that challenge me to grow. I’m driven by curiosity and a desire to make meaningful contributions, whether working independently or as part of a team.",
+		aboutMe: "I am a motivated and detail-oriented professional with a strong passion for learning and problem-solving. With a proven ability to adapt quickly, collaborate effectively, and deliver high-quality work, I thrive in fast-paced environments that challenge me to grow.",
 	});
 
 	const [experiences, setExperiences] = useState(
@@ -32,7 +32,7 @@ export default function App() {
 				startDate: "08/2020",
 				endDate: "12/2022",
 				location: "New Jersey, Bihar",
-				description: "Supported senior researchers on accessibility standards for the open web. Created and usability tested wireframes and prototypes. Produced interactive documentation for quick onboarding of new researchers."
+				description: "Supported senior researchers on accessibility standards for the open web. Created and usability tested wireframes and prototypes."
 			},
 			{
 				index: 1,
@@ -41,7 +41,7 @@ export default function App() {
 				startDate: "01/2019",
 				endDate: "07/2020",
 				location: "Pune, Maharashtra",
-				description: "Developed responsive web interfaces using React and Tailwind CSS. Collaborated with UX designers to implement pixel-perfect UI components. Optimized page performance and accessibility across major browsers."
+				description: "Developed responsive web interfaces using React and Tailwind CSS. Collaborated with UX designers to implement pixel-perfect UI components."
 			},
 			{
 				index: 2,
@@ -50,7 +50,7 @@ export default function App() {
 				startDate: "03/2017",
 				endDate: "12/2018",
 				location: "Bangalore, Karnataka",
-				description: "Designed intuitive user interfaces for client-facing web applications. Converted Figma mockups into functional HTML/CSS components. Worked closely with backend teams to ensure seamless integration."
+				description: "Designed intuitive user interfaces for client-facing web applications. Converted Figma mockups into functional HTML/CSS components."
 			}
 		]
 	)
