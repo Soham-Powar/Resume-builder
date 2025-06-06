@@ -7,12 +7,18 @@ export default function ExperiencePanel({ setExperiences, experiences }) {
 
 	return (
 		<div className="bg-white rounded-xl pb-2">
-			<h2 className="text-[24px] font-bold p-3">Experiences</h2>
+			<h2 className="text-[24px] font-bold p-3 flex">
+				Experiences
+				<button onClick={() => {
+					const el = document.querySelector('.js-experiences');
+					el.classList.contains('hide') ? el.classList.remove('hide') : el.classList.add('hide');
+				}} className="ml-[auto]">👀</button>
+			</h2>
 
 			{formShown >= 0 ? (
 				<ExperienceForm experiences={experiences} setExperiences={setExperiences} expID={formShown} />
 			) : (
-				<ul className=" flex flex-col gap-1.5">
+				<ul className="flex flex-col gap-1.5 js-experiences">
 					{experiences.map(experience => {
 						return (
 							<div key={experience.companyName} className="flex justify-between p-2 border-t-7 border-[#F3F4F6] items-center">

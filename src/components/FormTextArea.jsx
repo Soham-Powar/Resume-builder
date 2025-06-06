@@ -1,6 +1,6 @@
 
 
-export default function FormTextArea({ name, isRequired, setInfo, info, expID }) {
+export default function FormTextArea({ name, isRequired, setInfo, info, expID, className }) {
 
 	function handleInputChange(e) {
 		console.log(expID)
@@ -33,7 +33,7 @@ export default function FormTextArea({ name, isRequired, setInfo, info, expID })
 
 
 	return (
-		<div className="flex flex-col gap-1 mb-2">
+		<div className={`flex flex-col gap-1 mb-2 ${className}`} >
 			<label htmlFor={idfy} className="font-semibold">{name}</label>
 			<textarea
 				id={idfy}
