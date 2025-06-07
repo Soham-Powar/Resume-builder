@@ -37,7 +37,7 @@ export default function EducationPanel({ setEducations, educations }) {
 
 			) : (
 				<>
-					<ul className="flex flex-col gap-1.5 js-educations">
+					<ul className="flex flex-col gap-1.5 js-education">
 						{educations.map(education => {
 							return (
 								<div key={education.index} className="flex justify-between p-2 border-t-7 border-[#F3F4F6] items-center">

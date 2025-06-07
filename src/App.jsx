@@ -24,7 +24,7 @@ export default function App() {
 	});
 
 	const [profile, setProfile] = useState({
-		aboutMe: "I am a motivated and detail-oriented professional with a strong passion for learning and problem-solving. With a proven ability to adapt quickly, collaborate effectively, and deliver high-quality work, I thrive in fast-paced environments that challenge me to grow.",
+		aboutMe: "I am a motivated and detail-oriented professional with a strong passion for learning and problem-solving. With a proven ability to adapt quickly, collaborate effectively, and deliver high-quality work, I thrive in fast-paced environments that challenge me to grow. I enjoy tackling complex challenges and continuously seek opportunities to improve both my technical and interpersonal skills.",
 	});
 
 	const [experiences, setExperiences] = useState(
@@ -85,8 +85,8 @@ export default function App() {
 			<div className="grow-1 p-2 flex flex-col gap-4 max-w-[450px]">
 				<PersonalInfoForm setPersonalInfo={setPersonalInfo} personalInfo={personalInfo} />
 				<ProfileForm setProfile={setProfile} profile={profile} />
-				<ExperiencePanel setExperiences={setExperiences} experiences={experiences} />
 				<EducationPanel setEducations={setEducations} educations={educations} />
+				<ExperiencePanel setExperiences={setExperiences} experiences={experiences} />
 				<button
 					onClick={generatePDF}
 					className="bg-[#F87171] hover:bg-[#ef4444] text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-colors duration-200"
@@ -100,8 +100,8 @@ export default function App() {
 			<div className="pdf-content h-[29.7cm] w-[21cm] flex flex-col gap-1 [box-shadow:0_13px_27px_-5px_rgba(50,50,93,0.1),0_8px_16px_-8px_rgba(0,0,0,0.25)]">
 				<PersonalInfo personalInfo={personalInfo} />
 				<Profile profile={profile} />
-				<ExperienceSection experiences={experiences} />
 				<EducationSection educations={educations} />
+				<ExperienceSection experiences={experiences} />
 			</div>
 
 
