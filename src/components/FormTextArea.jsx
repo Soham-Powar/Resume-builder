@@ -1,17 +1,17 @@
 
 
-export default function FormTextArea({ name, isRequired, setInfo, info, expID, className }) {
+export default function FormTextArea({ name, isRequired, setInfo, info, id, className }) {
 
 	function handleInputChange(e) {
 		if (Array.isArray(info)) {
 
 			const copyExperience = {
-				...info[expID],
+				...info[id],
 				[idfy]: e.target.value,
 			};
 
 			const shallowCopy = info.slice();
-			shallowCopy[expID] = copyExperience;
+			shallowCopy[id] = copyExperience;
 			setInfo(shallowCopy);
 
 		} else {
@@ -40,7 +40,7 @@ export default function FormTextArea({ name, isRequired, setInfo, info, expID, c
 				required={isRequired}
 				value={
 					Array.isArray(info)
-						? info[expID]?.[idfy] || ""
+						? info[id]?.[idfy] || ""
 						: info[idfy] || ""
 				}
 				onChange={(e) =>

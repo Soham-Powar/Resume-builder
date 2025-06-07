@@ -9,12 +9,11 @@ export default function EducationPanel({ setEducations, educations }) {
 	function addNewEducation() {
 		const newExp = {
 			index: eduIndex,
-			companyName: "",
-			position: "",
+			school: "",
+			degree: "",
 			startDate: "",
 			endDate: "",
 			location: "",
-			description: "",
 		}
 		setEducations([
 			...educations,
@@ -32,7 +31,7 @@ export default function EducationPanel({ setEducations, educations }) {
 
 			{formShown >= 0 ? (
 				<>
-					<EducationForm educations={educations} setEducations={setEducations} expID={formShown} />
+					<EducationForm educations={educations} setEducations={setEducations} eduID={formShown} />
 					<button onClick={() => setFormShown(-1)} className="bg-[#187FF5] text-white font-bold py-1.5 px-2.5 rounded-lg ml-[40%] hover:bg-[#187ff5c4]">Save</button>
 				</>
 
@@ -42,7 +41,7 @@ export default function EducationPanel({ setEducations, educations }) {
 						{educations.map(education => {
 							return (
 								<div key={education.index} className="flex justify-between p-2 border-t-7 border-[#F3F4F6] items-center">
-									<li>{education.companyName}</li>
+									<li>{education.school}</li>
 									<div className="flex gap-1.5">
 										<button onClick={() => setFormShown(education.index)}>Edit</button>
 										<button>X</button>

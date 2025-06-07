@@ -3,10 +3,12 @@ import { useState } from "react";
 import PersonalInfo from "./components/PersonalInfo";
 import Profile from "./components/Profile";
 import ExperienceSection from "./components/ExperienceSection";
+import EducationSection from "./components/EducationSection";
 
 import PersonalInfoForm from "./components/PersonalInfoForm";
 import ProfileForm from "./components/ProfileForm";
 import ExperiencePanel from "./components/ExperiencePanel";
+import EducationPanel from "./components/EducationPanel";
 
 import generatePDF from "./components/generatePDF"
 
@@ -56,6 +58,26 @@ export default function App() {
 			}
 		]
 	)
+	const [educations, setEducations] = useState(
+		[
+			{
+				index: 0,
+				school: "Missisipi International School",
+				degree: "B.Tech in Human Engineering",
+				startDate: "08/2020",
+				endDate: "10/2020",
+				location: "Bahamas"
+			},
+			{
+				index: 1,
+				school: "University of Helsinki",
+				degree: "Psychology",
+				startDate: "08/2019",
+				endDate: "10/2020",
+				location: "Helsinki"
+			},
+		]
+	)
 
 	return (
 		<div className="flex flex-col sm:flex-row justify-center bg-[#F3F4F6] p-5 gap-10">
@@ -64,6 +86,7 @@ export default function App() {
 				<PersonalInfoForm setPersonalInfo={setPersonalInfo} personalInfo={personalInfo} />
 				<ProfileForm setProfile={setProfile} profile={profile} />
 				<ExperiencePanel setExperiences={setExperiences} experiences={experiences} />
+				<EducationPanel setEducations={setEducations} educations={educations} />
 				<button
 					onClick={generatePDF}
 					className="bg-[#F87171] hover:bg-[#ef4444] text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-colors duration-200"
@@ -78,7 +101,7 @@ export default function App() {
 				<PersonalInfo personalInfo={personalInfo} />
 				<Profile profile={profile} />
 				<ExperienceSection experiences={experiences} />
-				{/* <Education /> */}
+				<EducationSection educations={educations} />
 			</div>
 
 

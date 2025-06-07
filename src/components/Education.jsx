@@ -6,9 +6,8 @@ export default function Education({ education }) {
 				<p>{education.location}</p>
 			</div>
 			<div className="flex-7/9 pt-2">
-				<p className="font-semibold text-lg">{education.companyName}</p>
-				<p>{education.position}</p>
-				<p>{education.description}</p>
+				<p className="font-semibold text-lg">{education.school}</p>
+				<p>{education.degree}</p>
 			</div>
 		</div>
 	);
