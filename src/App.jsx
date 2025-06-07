@@ -78,8 +78,7 @@ export default function App() {
 				<PersonalInfo personalInfo={personalInfo} />
 				<Profile profile={profile} />
 				<ExperienceSection experiences={experiences} />
-				{/* <Education />
-				<Skills /> */}
+				{/* <Education /> */}
 			</div>
 
 
