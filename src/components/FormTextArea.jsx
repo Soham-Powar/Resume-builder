@@ -3,7 +3,6 @@
 export default function FormTextArea({ name, isRequired, setInfo, info, expID, className }) {
 
 	function handleInputChange(e) {
-		console.log(expID)
 		if (Array.isArray(info)) {
 
 			const copyExperience = {

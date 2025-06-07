@@ -3,7 +3,6 @@
 export default function FormInput({ name, isRequired, type, setInfo, info, expID }) {
 
 	function handleInputChange(e) {
-		console.log(expID)
 		if (Array.isArray(info)) {
 
 			const copyExperience = {
