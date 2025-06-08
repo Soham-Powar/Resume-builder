@@ -8,7 +8,7 @@ Live Demo: [resume-builder-red-ten.vercel.app](https://resume-builder-red-ten.ve
 
 A dynamic, single-page React application that allows users to build and download a professional résumé.
 
-![Resume Builder Screenshot](https://user-images.githubusercontent.com/your-screenshot.png)
+![Resume Builder Screenshot](https://github.com/Soham-Powar/Resume-builder/blob/main/src/assets/projectScreenshot.png)
 
 ---
 
@@ -16,10 +16,9 @@ A dynamic, single-page React application that allows users to build and download
 
 * 🧑 Add personal details (name, email, address, and bio)
 * 💼 Add, edit, and delete experiences
-* 🎓 Add educational background
+* 🎓 Add, edit, and delete educational background
 * 📝 Live preview of the resume
 * 📥 Download as a well-formatted PDF
-* 📱 Responsive design for all screen sizes
 
 ---
 
@@ -80,20 +79,3 @@ npm run build
 Then deploy the `dist/` folder using Vercel, Netlify, or your preferred platform.
 
 ---
-
-## 🧠 Learning Outcomes
-
-* Gained hands-on experience with React hooks and state management.
-* Learned dynamic form handling and conditional rendering.
-* Integrated third-party libraries for real-world functionality (PDF export).
-* Practiced clean UI design using Tailwind CSS.
-
----
-
-## 🖋️ License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-Let me know if you'd like to [auto-generate a LICENSE file or add contribution guidelines](f) to go along with this.
