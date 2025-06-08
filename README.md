@@ -1,5 +1,3 @@
-Here’s a well-structured and professional `README.md` file for your [CV Application project](https://resume-builder-red-ten.vercel.app/), based on [The Odin Project's React CV assignment](https://www.theodinproject.com/lessons/node-path-react-new-cv-application):
-
 ---
 
 # 📄 Resume Builder
