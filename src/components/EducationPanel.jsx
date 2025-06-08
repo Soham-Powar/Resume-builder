@@ -23,6 +23,12 @@ export default function EducationPanel({ setEducations, educations }) {
 		eduIndex++;
 	}
 
+	function removeEducation(indexToRemove) {
+		setEducations(prevEducations =>
+			prevEducations.filter((element) => element.index !== indexToRemove)
+		);
+	}
+
 	const [formShown, setFormShown] = useState(-1);
 
 	return (
@@ -44,7 +50,7 @@ export default function EducationPanel({ setEducations, educations }) {
 									<li>{education.school}</li>
 									<div className="flex gap-1.5">
 										<button onClick={() => setFormShown(education.index)}>Edit</button>
-										<button>X</button>
+										<button onClick={() => removeEducation(education.index)}>X</button>
 									</div>
 								</div>
 							);

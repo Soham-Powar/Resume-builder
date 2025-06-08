@@ -24,6 +24,12 @@ export default function ExperiencePanel({ setExperiences, experiences }) {
 		expIndex++;
 	}
 
+	function removeExperience(indexToRemove) {
+		setExperiences(prevExperiences =>
+			prevExperiences.filter((element) => element.index !== indexToRemove)
+		);
+	}
+
 	const [formShown, setFormShown] = useState(-1);
 
 	return (
@@ -45,7 +51,7 @@ export default function ExperiencePanel({ setExperiences, experiences }) {
 									<li>{experience.companyName}</li>
 									<div className="flex gap-1.5">
 										<button onClick={() => setFormShown(experience.index)}>Edit</button>
-										<button>X</button>
+										<button onClick={() => removeExperience(experience.index)}>X</button>
 									</div>
 								</div>
 							);
