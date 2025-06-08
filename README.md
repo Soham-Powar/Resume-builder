@@ -1,0 +1,99 @@
+Here’s a well-structured and professional `README.md` file for your [CV Application project](https://resume-builder-red-ten.vercel.app/), based on [The Odin Project's React CV assignment](https://www.theodinproject.com/lessons/node-path-react-new-cv-application):
+
+---
+
+# 📄 Resume Builder
+
+Live Demo: [resume-builder-red-ten.vercel.app](https://resume-builder-red-ten.vercel.app/)
+
+A dynamic, single-page React application that allows users to build and download a professional résumé.
+
+![Resume Builder Screenshot](https://user-images.githubusercontent.com/your-screenshot.png)
+
+---
+
+## ✨ Features
+
+* 🧑 Add personal details (name, email, address, and bio)
+* 💼 Add, edit, and delete experiences
+* 🎓 Add educational background
+* 📝 Live preview of the resume
+* 📥 Download as a well-formatted PDF
+* 📱 Responsive design for all screen sizes
+
+---
+
+## 🔧 Tech Stack
+
+* ⚛️ React (Functional Components + Hooks)
+* 💨 Tailwind CSS
+* 🖼️ html2pdf.js for PDF generation
+* ⚙️ Vite (for fast development build)
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── PersonalInfoForm.jsx
+│   ├── ExperienceForm.jsx
+│   ├── EducationForm.jsx
+│   ├── ResumePreview.jsx
+│   └── ...
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/resume-builder.git
+cd resume-builder
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the app locally
+
+```bash
+npm run dev
+```
+
+---
+
+## 📦 Build for production
+
+```bash
+npm run build
+```
+
+Then deploy the `dist/` folder using Vercel, Netlify, or your preferred platform.
+
+---
+
+## 🧠 Learning Outcomes
+
+* Gained hands-on experience with React hooks and state management.
+* Learned dynamic form handling and conditional rendering.
+* Integrated third-party libraries for real-world functionality (PDF export).
+* Practiced clean UI design using Tailwind CSS.
+
+---
+
+## 🖋️ License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+Let me know if you'd like to [auto-generate a LICENSE file or add contribution guidelines](f) to go along with this.
